@@ -2,6 +2,11 @@ import re
 
 reg = re.compile("(Prof\. |Dr\. )*([A-Z][a-z]+) ([A-Z\.a-z]*) ?([A-Z][a-z]+)(, (PhD|MSc|Duke of Manchester|KG|KT|PC|ADC))*")
 
+#meine_Übung: reg = re.compile("(Prof\. |Dr\. )*([A-Z][a-z]+) ([A-Z\.])*([A-Z][a-z]+)?( )?([A-Z][a-z]+)(, (PhD|MSc|Duke of Manchester|KG|KT|PC|ADC))*")
+
+
+
+
 m = reg.match("Uwe Meier")
 print(m)
 m = reg.match("Prof. Dr. Chris C Schmidt")
